@@ -16,7 +16,7 @@ ul,ol {
     list-style-type:none;
 }
 
-.touch-highlight:active {
+/*.touch-highlight:active {
 	transfomr: scale(0.9);
 	-webkit-transfomr: scale(0.9);
 	-moz-transfomr: scale(0.9);
@@ -25,7 +25,7 @@ ul,ol {
 	-webkit-box-shadow: 0px 0px 20px #fff;
 	-moz-box-shadow: 0px 0px 20px #fff;
 	-o-box-shadow: 0px 0px 20px #fff;
-}
+}*/
 
 a {
 	color: #27ae61;
