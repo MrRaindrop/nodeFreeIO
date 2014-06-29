@@ -1,0 +1,56 @@
+<div class='page-user'>
+	<div class='header'>
+	</div>
+	<div class='body'>
+		<div class="info">
+			<div class="icon" style="background-image:url(<%=icon%>)"></div>
+			<div class="detail">
+				<div class="name"><%=name%></div>
+				<div class="content">FreeIO第<%=number%>号会员，加入于<%=joinTime%></div>
+				<a class="site" href="'http://' + <%=site%>"><%=site%></a>
+			</div>
+		</div>
+		<div class="posts">
+			<div class="top"><%=name%>最近创建的主题</div>
+			<div class="content">
+				<ul>
+				<% _.each(posts, function(post, i, posts) { %>
+					<li class="post" data-id="<%=post.id%>">
+						<a class="title" href="<%=post.id%>"><%=post.title%></a>
+						<div class="info">
+							<span class="tag"><%=post.tag%></span>
+							<span class="author" data-id="<%=id%>"><%=name%></span>
+							<span class="time"><%=post.time%></span>
+						</div>
+					</li>
+				<% }) %>
+				</ul>
+			</div>
+			<div class="bottom"></div>
+		</div>
+		<div class="reply">
+			<div class="top"><%=name%>最近回复了</div>
+			<div class="content">
+				<ul>
+				<% _.each(reply, function(rep, i, reps) { %>
+					<li class="rep">
+						<div class="info">
+							<div class="time"><%=rep.time%></div>
+							<div class="reply-to" data-id="<%=rep.post.id%>">
+								回复了<%=rep.post.author.name%>创建的主题 > 
+								<a class="title" data-id="<%=rep.post.id%>"><%=rep.post.title%></a>
+							</div>
+						</div>
+						<div class="content">
+							<div class="arrow"></div>
+							<%=rep.content%>
+						</div>
+					</li>
+				<% }) %>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+	</div>
+</div>

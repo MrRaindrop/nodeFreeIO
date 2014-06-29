@@ -1,0 +1,29 @@
+<div class='page-postlist'>
+	<div class='header'>
+	</div>
+	<div class='body'>
+		<ul class="content">
+		<% _.each(list, function(post, i, list) { %>
+			<li class="post" data-id="<%=post.id%>">
+				<div class="up">
+					<a class="icon" style="background-image:url(<%=post.author.icon%>)"></a>
+					<span class="type"><%=post.type%></span>
+					<a class="author" data-id="<%=post.author.id%>"><%=post.author.name%></a>
+				</div>
+				<div class="mid">
+					<a class="title"><%=post.title%></a>
+					<div class="reply-num"><%=post.reply.length%></div>
+				</div>
+				<div class="down">
+					<div class="time"><%=post.time%></div>
+					<div class="last-reply">最后回复
+						<a class="author" data-id="<%=post.reply[0].author.id%>"><%=post.reply[0].author.name%></a>
+					</div>
+				</div>
+			</li>
+		<% }); %>
+		</ul>
+	</div>
+	<div class="footer">
+	</div>
+</div>

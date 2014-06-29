@@ -1,0 +1,47 @@
+.page-register {
+	position: relative;
+	width: 100%;
+	background-color: #f7f7f7;
+}
+
+.page-register .header {
+	position: relative;
+	width: 100%;
+}
+
+.page-register .body {
+	position: relative;
+	width: 100%;
+}
+
+.page-register .body .form {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	position: relative;
+	width: 100%;
+	padding: 16px;
+}
+
+.page-register .body .form > * {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	display: block;
+	width: 60%;
+	min-width: 100px;
+	margin: 10px auto;
+	font-size: 12px;
+	padding: 2px 4px;
+}
+
+.page-register .body .form > label {
+	margin-top: -8px;
+}
+
+.page-register .footer {
+	position: relative;
+	width: 100%;
+}
