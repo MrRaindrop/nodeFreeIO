@@ -1,6 +1,6 @@
 nodeFreeIO
 ==========
-nodeFreeIO: a community for coder depolyed on node. 
+nodeFreeIO: a community depolyed on node for coders. 
 usage
 ==========
 * run node cmd: ``node [path_to_your_dir]/app``
